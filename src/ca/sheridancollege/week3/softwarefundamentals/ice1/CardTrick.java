@@ -62,5 +62,9 @@ public class CardTrick {
         if(compareAns==0){
             System.out.println("Magic hand does not contain your card");
         }
+        
+        Card luckyCard  = new Card();
+        c.setSuit("diamonds");
+        c.setValue(8);
     }
 }
