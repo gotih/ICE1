@@ -8,7 +8,6 @@
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
 import java.util.Scanner;
 import java.util.Random;
-
 /**
  * A class that fills a magic hand of 7 cards with random Card Objects
  * and then asks the user to pick a card and searches the array of cards
@@ -23,12 +22,12 @@ public class CardTrick {
         Random rand = new Random();
         Scanner input = new Scanner(System.in);
         
-        
         for (int i=0; i<magicHand.length; i++) {
             magicHand[i] = new Card();
             magicHand[i].setValue(rand.nextInt(13 - 1) + 1);
             magicHand[i].setSuit(Card.SUITS[(int)(rand.nextInt(4 - 1) + 1)]);
         }
+        
         for (Card mh : magicHand) {
             System.out.println(mh.getSuit() + " " + mh.getValue());
         }
