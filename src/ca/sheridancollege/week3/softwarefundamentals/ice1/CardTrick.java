@@ -68,5 +68,6 @@ public class CardTrick {
         Card luckyCard  = new Card();
         c.setSuit("diamonds");
         c.setValue(8);
+        
     }
 }
